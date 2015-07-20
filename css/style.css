@@ -1,0 +1,382 @@
+/** - Main content **/
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%
+}
+body {
+    overflow-x: hidden
+}
+a:hover {
+    text-decoration: none
+}
+#banner img {
+    width: 100%;
+    height: 100%
+}
+#intro {
+    position: absolute;
+    top: 90px;
+    z-index: 100;
+    color: #315B7E;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px
+}
+#intro h1 {
+    font-size: 32px;
+    padding-bottom: 10px
+}
+#intro h2 {
+    font-size: 30px
+}
+/** Navigation **/
+
+#hidden-bar {
+    display: none
+}
+.sidenav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100px;
+    height: 100%;
+    background: #152736
+}
+.nav {
+    margin-top: 40px;
+    text-align: center
+}
+.nav li a {
+    text-align: center;
+    width: 100px
+}
+.nav li:hover {
+    background: #080808;
+    border-left: 2px solid #152736
+}
+.glyphicon {
+    font-size: 35px;
+    display: block;
+    color: #6b6e80;
+    padding-bottom: 10px
+}
+.glyphicon-chevron-down {
+    color: #315B7E
+}
+.glyphicon-chevron-down:hover {
+    text-decoration: none
+}
+.scroll {
+    position: absolute;
+    top: 520px;
+    left: 48%;
+    font-size: 42px;
+    animation: bounce .5s linear 1s infinite alternate;
+    -webkit-animation: bounce .5s linear 1s infinite alternate;
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+}
+/* Chrome, Safari, Opera */
+
+@-webkit-keyframes bounce {
+    from {
+        -webkit-transform: scale(1);
+        bottom: 130px
+    }
+    to {
+        -webkit-transform: scale(1.3);
+        bottom: 125px
+    }
+}
+/* Standard syntax */
+
+@keyframes bounce {
+    from {
+        transform: scale(1);
+        bottom: 130px
+    }
+    to {
+        transform: scale(1.3);
+        bottom: 125px
+    }
+}
+/** General **/
+
+.title h2 {
+    padding: 20px 0 0 100px;
+    font-size: 24px;
+    text-decoration: underline;
+    color: #315B7E;
+}
+/** About section **/
+
+#about {
+    background: #fff
+}
+#about p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #6b6e80;
+    line-height: 28px;
+    text-align: justify;
+    padding: 40px 0 40px 100px
+}
+/** Education section **/
+
+#education {
+    background: #F5F5F5;
+    padding-bottom: 40px;
+}
+.education-entry {
+    padding: 20px 0 0 100px
+}
+.education-entry .glyphicon {
+    padding-top: 14px;
+    color: #315B7E;
+}
+.education-entry i {
+    display: inline-block;
+    float: left
+}
+.education-entry h3 {
+    padding-left: 60px;
+    margin: 10px 0 0 0;
+}
+.education-entry h3:nth-child(2) {
+    font-size: 22px;
+    color: #315B7E;
+}
+.education-entry h3:nth-child(3) {
+    font-size: 20px;
+    color: #949494;
+}
+.education-entry h3:nth-child(4) {
+    font-size: 18px;
+    color: #949494;
+    font-style: italic;
+}
+.education-entry h3:nth-child(5) {
+    font-size: 18px;
+    color: #949494;
+}
+/** Work Experience **/
+
+#workExperience {
+    padding-bottom: 50px
+}
+.work-entry {
+    margin-left: 100px;
+    background: #F5F5F5;
+    margin-top: 20px;
+    padding: 20px;
+}
+.work-entry .glyphicon {
+    color: #315B7E;
+}
+.work-entry i {
+    display: inline-block;
+    float: left
+}
+.work-entry h3 {
+    padding-left: 60px
+}
+.work-entry p {
+    padding-left: 60px;
+    margin-top: 0;
+    font-size: 16px;
+    text-align: justify;
+}
+.work-entry h3:nth-child(2) {
+    margin-top: 5px;
+    font-size: 22px;
+    color: #315B7E
+}
+.work-entry h3:nth-child(3) {
+    margin-top: 0;
+    font-size: 20px;
+    color: #949494
+}
+.work-entry h3:nth-child(4) {
+    margin-top: 0;
+    font-size: 20px;
+    color: #949494
+}
+.work-entry h3:nth-child(5) {
+    margin-top: 0;
+    font-size: 20px;
+    color: #949494
+}
+/** Projects **/
+
+#projects {
+    background: #F5F5F5;
+    padding-bottom: 100px
+}
+#projects .col-md-4 {
+    padding: 70px 0 0 100px
+}
+/** Skills **/
+
+#skills {
+    color: #000;
+}
+#skills ul {
+    padding-left: 100px;
+    list-style-type: none;
+    padding-top: 30px;
+    text-align: center
+}
+#skills li {
+    display: inline;
+    padding: 10px;
+}
+#skills li:nth-child(1) {
+    background: #F7464A;
+}
+#skills li:nth-child(2) {
+    background: #46BFBD;
+}
+#skills li:nth-child(3) {
+    background: #FDB45C;
+}
+#skills li:nth-child(4) {
+    background: #949FB1;
+}
+#skills li:nth-child(5) {
+    background: #4D5360;
+}
+#canvas-holder {
+    text-align: center;
+    padding: 70px 0 50px 100px
+}
+/** Contact section **/
+
+#connect {
+    background: #F5F5F5;
+    padding-bottom: 300px;
+}
+#connect ul {
+    padding-left: 100px;
+    list-style-type: none;
+    text-align: center
+}
+#connect li {
+    display: inline
+}
+#connect h3 {
+    font-size: 20px;
+    padding-left: 100px;
+    text-align: center;
+}
+#map {
+    display: block;
+    height: 100%;
+}
+#mapDiv {
+    height: 400px;
+    width: 100%;
+    padding: 70px 0 50px 100px
+}
+
+/** Media queries **/
+
+@media (max-width: 768px) {
+    body {
+        padding: 0;
+        margin: 0
+    }
+    .scroll {
+        display: none
+    }
+    .navbar-fixed-top {
+        position: relative;
+        top: 0
+    }
+    #hidden-bar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        z-index: 100
+    }
+    .nav .glyphicon {
+        display: none
+    }
+    .nav li a {
+        width: 100%;
+        text-align: center
+    }
+    .navbar-toggle {
+        background-color: gray
+    }
+    .navigation {
+        width: 100%
+    }
+    .navbar-default {
+        background: #152736
+    }
+    .navbar-header {
+        background: gray;
+    }
+    .navbar {
+        width: 100%;
+    }
+    .sidenav {
+        display: block;
+        margin: 0;
+        padding: 0
+    }
+    .icon-bar {
+        background-color: #333
+    }
+    .nav li a {
+        text-align: center
+    }
+    .nav li:hover {
+        background: none;
+        border-left: none
+    }
+    .title h2 {
+        padding-left: 0;
+        text-align: center
+    }
+    #about p,
+    .education-entry {
+        padding-left: 0;
+    }
+    .work-entry {
+        margin-left: 0;
+    }
+    #projects .col-md-4 {
+        text-align: center;
+        padding-left: 0;
+    }
+    #skills ul {
+        padding-left: 0;
+    }
+    #connect ul,
+    #mapDiv,
+    #canvas-holder,
+    #connect h3 {
+        padding-left: 0;
+    }
+}
+@media (max-width: 481px) {
+    #intro {
+        top: 0
+    }
+    #intro h1 {
+        font-size: 18px
+    }
+    #intro h2 {
+        font-size: 16px
+    }
+}
