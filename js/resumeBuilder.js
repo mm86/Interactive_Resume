@@ -194,29 +194,34 @@ var skills = {
 };
 
 
+
 var contact = {
     "address":"San Francisco, California",
     "number":"812-327-7810",
-    "list": ["images/github.png","images/linkedin.png","images/mail.png"],
+	"twitter":"@mm86",
+	"github":"https://github.com/mm86/",
+	"email": "madhuvanmahesh@gmail.com",
+ 
    
    display : function () {
 
-
-        $('#connect .col-md-12:last').append(HTMLcontact);
-		for(i in contact.list) {
-      
-        var formattedcontactList = HTMLsocial.replace("%data%", contact.list[i]);
-		
-		$('ul:last').append(formattedcontactList);
-		}
-		
+	
 		var formattedAddress = HTMLaddress.replace("%data%", contact.address);
 		var formattedNumber = HTMLnumber.replace("%data%", contact.number);
+		var formattedTwitter = HTMLtwitter.replace("%data%", contact.twitter);
+		var formattedGithub = HTMLgithub.replace("%data%", contact.github);
+		var formattedEmail = HTMLemail.replace("%data%", contact.email);
+	
 		
 		$('#connect .col-md-12:last').append(formattedAddress);
-		$('#connect .col-md-12:last').append(formattedNumber);
+		$('#connect .col-md-12:last').append(formattedNumber);		
+		$('#connect .col-md-12:last').append(formattedTwitter);
+		$('#connect .col-md-12:last').append(formattedGithub);	
+		$('#connect .col-md-12:last').append(formattedEmail);
+	
 }
 };
+
 
 
 banner.display();
