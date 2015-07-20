@@ -84,28 +84,17 @@ a:hover {
     -moz-transition: all .5s ease-in-out;
     -o-transition: all .5s ease-in-out;
 }
-/* Chrome, Safari, Opera */
 
-@-webkit-keyframes bounce {
-    from {
-        -webkit-transform: scale(1);
-        bottom: 130px
-    }
-    to {
-        -webkit-transform: scale(1.3);
-        bottom: 125px
-    }
-}
 /* Standard syntax */
 
 @keyframes bounce {
     from {
         transform: scale(1);
-        bottom: 130px
+        
     }
     to {
         transform: scale(1.3);
-        bottom: 125px
+       
     }
 }
 /** General **/
