@@ -51,15 +51,17 @@ var HTMLprojectDesc = '<p>%data%</p>';
 var HTMLlist = '<li>%data%</li>';
 
 
+
 /* Contact
    =================== */
 
-
-var HTMLcontact = '<ul></ul>';
-var HTMLsocial = '<li><img src="%data%" alt="social image" width="50" height="50"></li>';
 var googleMap = '<div id="map"></div>';
 var HTMLaddress = '<h3>%data%<h3>';
 var HTMLnumber = '<h3>%data%<h3>';
+var HTMLtwitter = '<h3>Twitter: %data%<h3>';
+var HTMLgithub = '<h3>Github: %data%<h3>';
+var HTMLemail = '<h3>%data%<h3>';
+
 
 
 
