@@ -196,7 +196,7 @@ var skills = {
 
 var contact = {
     "address":"San Francisco, California",
-    "number":"812-327-7810",
+    "number":"8XX-XXX-XXXX",
     "list": ["images/github.png","images/linkedin.png","images/mail.png"],
    
    display : function () {
